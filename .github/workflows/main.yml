@@ -16,5 +16,7 @@ jobs:
          uses: azure/login@v1
          with:
            creds: ${{secrets.AZURE_CREDIENTIALS}}
-       
+           
+       - name: Show subscription
+         run: az account show
       
